@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+/* ============ */
+.header{
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+.nav-link {
+    transition: 0.5s ease;
+}
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.header-scroll {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #00000020;
+    animation: slideDown 1s linear;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.header-scroll .brand-logo {
+    width: 160px;
+}
+.header-scroll .nav-link {
+    transition: 0.5s ease;
+    color: #1A129F !important;
+}
+.header-scroll .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #1A129F;
+
+}
+.brand-logo {
+    width: 200px;
+}
+.show-hide-menu {
+    display: flex !important; /* show-hide menu toggle class by jQuery */
+    width: 50% !important;
+}
+#btnMode {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+
+/* Home */
+/* ========= */
+.home {
+    background-image: url("../img/bg-shape.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+}
+.site-brand {
+    bottom: 100px;
+    left: 100px;
+}
+.site-brand a {
+    transition: 0.5s;
+    color: #1A129F !important;
+}
+.site-brand div {
+    width: 5px;
+    height: 40px;
+    background-color: #1A129F !important;
+}
+.site-brand a:hover {
+    transform: scale(1.5);
+}
+.mouse-icon{
+    left: 45%;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+.mouse {
+    width: 35%;
+}
+
+
+/* About */
+/* =========== */
+.about {
+    background-image: url("../img/bg-2.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    background-color: #7E76F915;
+}
+.biography-color {
+    color: #1A129F !important;
+}
+
+/* Services */
+/* ============== */
+.card {
+    transition: 0.5s ease;
+}
+.card:hover {
+    transform: scale(0.98);
+}
+.services {
+    background-image: url("../img/bg-3.svg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.services-color {
+    color: #1A129F !important;
+}
+
+/* Pricing */
+/* ============ */
+.pricing {
+    background-color: #7E76F915;
+}
+.pricing-card {
+    transition: 0.5s ease;
+}
+.pricing-card:hover {
+    transform: scale(0.98);
+    box-shadow: rgb(0 0 0 / 30%) 0px 0.125rem 0.25rem !important;
+}
+.slick-dots {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.slick-dots li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    border: 2px solid #7E76F9;
+    background-color: transparent;
+}
+.slick-dots li.slick-active {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #7E76F9;
+}
+
+/* Contact Us */
+.contact-us-color {
+    color: #1A129F !important;
+}
+
+/* Footer */
+/* ============ */
+.footer {
+    height: 300px;
+    background-color: #1A129F;
+}
+.footer-icon a {
+    transition: 0.5s ease;
+}
+.footer-icon a:hover {
+    transform: scale(1.5);
+}
+/* ====================================================== */
+
+.btn {
+    background-color: #1A129F !important;
+    border: 1px solid #1A129F !important;
+    transition: 0.5s ease !important;
+}
+.btn:hover {
+    background-color: #140f7e !important;
+    border: 1px solid #140f7e !important;
+}
+
+/* Mobile Responsive */
+/* ======================= */
+@media (max-width:576px) {
+    .header {
+        background-color: #ffffffee !important;
+        backdrop-filter: blur(5px);
+    }
+    .header .menu-icon {
+        color: #1A129F !important;
+    }
+    .header .nav-link {
+        color: #1A129F !important;
+    }
+    #navbarNav {
+        display: none;
+    }
+    .footer {
+        height: 100%;
+    }
+    .site-brand {
+        left: 365px;
+    }
+    .mouse-icon {
+        left: 85%;
+        bottom: 30px;
+    }
+}

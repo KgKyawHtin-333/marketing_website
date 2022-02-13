@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!-- For loading screen -->
+<div class="loader-container">
+    <div class="loader">Loading...</div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing</title>
+    <!-- For loading screen -->
+    <style>
+        .loader-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background-color: #ffffff;
+            z-index: 3000;
+        }
+        .loader {
+            color: #1A129F;
+            font-size: 20px;
+            margin: 100px auto;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            -webkit-animation: load4 1.3s infinite linear;
+            animation: load4 1.3s infinite linear;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        @-webkit-keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+        @keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+    </style>
+    <link rel="shortcut icon" href="img/logo-small.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 mx-0 mx-md-auto">
+                        <nav class="navbar navbar-expand-md justify-content-between flex-wrap wow animate__slideInDown animate__slow">
+                            <a href="#" class="navbar-brand">
+                                <img src="img/logo-long.svg"class="brand-logo" alt="brand logo">
+                            </a>
+                            <button class="btn d-flex d-md-none" id="btnMode">
+                                <i class="fa-solid fa-bars fa-2x menu-icon"></i>
+                            </button>
+                            <ul class="navbar-nav d-md-flex" id="navbarNav">
+                                <li class="nav-item">
+                                    <a href="#home" class="nav-link text-white text-uppercase fw-bold">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-link text-white text-uppercase fw-bold">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#services" class="nav-link text-white text-uppercase fw-bold">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#pricing" class="nav-link text-white text-uppercase fw-bold">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link text-white text-uppercase fw-bold">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="container-fluid home" id="home">
+        <div class="row">
+            <div class="container">
+                <div class="row flex-column-reverse flex-md-row justify-content-center align-items-md-center justify-content-md-center min-vh-100">
+                    <!-- Left text content -->
+                    <div class="col-12 col-md-4 wow animate__slideInLeft animate__slow">
+                        <div class="">
+                            <h3 class="text-uppercase fw-light">Social Media</h3>
+                            <h1 class="text-uppercase fw-bolder">For Business!</h1>
+                            <p class="text-uppercase text-black-50">
+                                Performance based social media agency
+                                <br>
+                                we are lorem media
+                            </p>
+                            <a href="" class="btn btn-primary text-uppercase">Get A Free Audit</a>
+                        </div>
+                    </div>
+                    <!-- Right Image -->
+                    <div class="col-12 col-md-4 my-5 wow animate__slideInRight animate__slow">
+                        <div class="">
+                            <img src="img/content-1.svg" class="w-100" alt="home image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Site Brand -->
+        <div class="site-brand position-absolute d-flex flex-column justify-content-between align-items-center wow animate__zoomIn animate__delay-1s animate__slow">
+            <a href="" class="my-2">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" class="my-2">
+                <i class="fa-brands fa-google"></i>
+            </a>
+            <a href="" class="my-2">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" class="my-2">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <div>
+
+            </div>
+        </div>
+        <!-- Middle mouse icon -->
+        <a href="#about" class="mouse-icon position-absolute shadow wow animate__bounceIn animate__delay-1s">
+            <img src="img/mouse.svg" class="mouse" alt="">
+        </a>
+    </section>
+
+    <!-- About -->
+    <section class="container-fluid about" id="about">
+        <div class="row">
+            <div class="container">
+                <div class="row min-vh-100 justify-content-center align-items-center">
+                    <!-- Left Image -->
+                    <div class="col-12 col-md-5 wow animate__slideInLeft animate__slow">
+                        <div>
+                            <img src="img/content-2.svg" class="w-100" alt="about image">
+                        </div>
+                    </div>
+                    <!-- Right text content -->
+                    <div class="col-12 col-md-5 wow animate__slideInRight animate__slow">
+                        <div class="ms-5">
+                            <h3 class="biography-color">Biography</h3>
+                            <h1 class="fw-bolder">Who We Are</h1>
+                            <p class="text-black-50 ">
+                                Lorem media is a full-service social media agency.We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible.We strive to develop a community around your business polishing your branding, and improving your public relations.Social Media is now one of the most powerful marketing tools with the ability to communicate with a target audience in a real time.
+                            </p>
+                            <p class="text-black-50">
+                                It's 2019: time to sink or swim.
+                            </p>
+                            <a href="" class="btn btn-primary px-4">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="container-fluid services" id="services">
+        <div class="row col-12 col-md-9 mx-0 mx-md-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow animate__zoomIn animate__slow">
+                        <div class="mt-5">
+                            <h3 class="text-uppercase services-color fw-light">Our Services</h3>
+                            <h1 class="fw-bolder">What We Offer</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 my-4">
+                        <div class="card shadow h-100 wow animate__zoomIn animate__delay-1s animate__slow">
+                            <div class="card-header bg-white border-0">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/icon-1.svg" class="w-25" alt="icon 1">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-uppercase fw-bolder">Socia Media Management</h6>
+                                <p class="text-black-50 ">
+                                    Perfect for growing your brand's social community and engage with the right audience.We manage everything from curation of content to management.
+                                </p>                               
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-flex justify-content-end me-3 mb-2">
+                                    <a href="#" class="btn btn-primary btn-sm text-uppercase">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 my-4">
+                        <div class="card shadow h-100 wow animate__zoomIn animate__delay-1s animate__slow">
+                            <div class="card-header bg-white border-0">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/icon-2.svg" class="w-25" alt="icon 2">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-uppercase fw-bolder">Social Growth Campaign</h6>
+                                <p class="text-black-50 ">
+                                    Our social growth campaign will have your socials come alive.
+                                    <br>
+                                    With constant growth and engagement you will be sure to have the thriving you've been looking for.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-flex justify-content-end me-3 mb-2">
+                                    <a href="#" class="btn btn-primary btn-sm text-uppercase">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 my-4">
+                        <div class="card shadow h-100 wow animate__zoomIn animate__delay-1s animate__slow">
+                            <div class="card-header bg-white border-0">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/icon-3.svg" class="w-25" alt="icon 3">
+                                </div>
+                            </div>
+                            <div class="card-body mb-0">
+                                <h6 class="text-uppercase fw-bolder">Branding & Media</h6>
+                                <p class="text-black-50 ">
+                                    Done right,branding offers a company an edge over the competition.So what exactly is branding,and why is it important for companies to integrate a well-rounded branding and media strategy?
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-flex justify-content-end me-3 mb-2">
+                                    <a href="#" class="btn btn-primary btn-sm text-uppercase">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="card shadow h-100 wow animate__zoomIn animate__delay-1s animate__slow">
+                            <div class="card-header bg-white border-0">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/icon-4.svg" class="w-25" alt="icon 4">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-uppercase fw-bolder">Influencer Marketing</h6>
+                                <p class="text-black-50 ">
+                                    We will pair your business with influencers that speak to your audience.Influencer Marketing is the most effective way to reach a loyal audience.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-flex justify-content-end me-3 mb-2">
+                                    <a href="#" class="btn btn-primary btn-sm text-uppercase">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="card shadow h-100 wow animate__zoomIn animate__delay-1s animate__slow">
+                            <div class="card-header bg-white border-0">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/icon-5.svg" class="w-25" alt="icon 5">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-uppercase fw-bolder">Socia Media Paid Advertising</h6>
+                                <p class="text-black-50 ">
+                                    Our ad campaigns will bring you the results your looking for.From brand awareness campaigns to lead funnels,we have got the tools to create the right ads for your business.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-flex justify-content-end me-3 mb-2">
+                                    <a href="#" class="btn btn-primary btn-sm text-uppercase">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="card shadow h-100 wow animate__zoomIn animate__delay-1s animate__slow">
+                            <div class="card-header bg-white border-0">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/icon-6.svg" class="w-25" alt="icon 6">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-uppercase fw-bolder">Content Marketing Services</h6>
+                                <p class="text-black-50 ">
+                                    We can create and provide your company with the best content marketing for your socials to improve online presenc.Creating valuable and quality content helps boost conversions and improve customer retention.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-flex justify-content-end me-3 mb-2">
+                                    <a href="#" class="btn btn-primary btn-sm text-uppercase">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="container-fluid pricing" id="pricing">
+        <div class="row col-12 col-md-9 mx-0 mx-md-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mt-5 mb-3 text-center wow animate__zoomIn animate__slow">
+                            <h3 class="text-secondary fw-light">Pricing</h3>
+                            <h1 class="fw-bolder">Our Pricing</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row slick-card">
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mx-2 wow animate__zoomIn animate__slow">
+                        <div class="card shadow-sm pricing-card">
+                            <div class="card-body text-center">
+                                <h4 class="my-4 fw-light">Gold Package</h4>
+                                <p class="mt-5 text-black-50">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, obcaecati.
+                                </p>
+                                <h4 class="mt-4 fw-bolder text-primary">$140</h4>
+                                <a href="#" class="btn btn-outline-primary my-3 text-white">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container-fluid contact" id="contact">
+        <div class="row min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="my-5 text-center wow animate__zoomIn animate__slow">
+                            <h3 class="contact-us-color fw-light">Contact Us</h3>
+                            <h1 class="text-uppercase fw-bolder">Get in touch with us</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <!-- Form -->
+                    <div class="col-12 col-md-4 px-5 px-md-2 wow animate__slideInLeft animate__slow animate__delay-1s">
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Your name">
+                                <label for="floatingName">Your name</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingEmail" placeholder="Email address">
+                                <label for="floatingEmail">Email address</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Leave a comment here</label>
+                              </div>
+                              <button class="btn btn-primary px-4">
+                                  <i class="fa-solid fa-paper-plane"></i>
+                                  Send
+                              </button>
+                        </form>
+                    </div>
+                    <!-- Google Map -->
+                    <div class="col-12 col-md-5 px-5 px-md-2 wow animate__slideInRight animate__slow animate__delay-1s">
+                        <div class="my-3 my-md-0">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.9793795131645!2d96.15981971431846!3d16.777701488446606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec91e8faaaab%3A0x7e3c9e47b88edcf0!2sMiMber%20Institute%20Of%20Management%20Studies!5e0!3m2!1sen!2smm!4v1644559294267!5m2!1sen!2smm" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="container">
+                <div class="row p-5 pb-0">
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="text-md-center text-white">
+                            <h3 class="fw-light">Marketing</h3>
+                            <p class="fs-3 fw-bold">Stay in touch</p>
+                            <div class="d-flex footer-icon justify-content-around w-50 mx-0 mx-md-auto">
+                                <a href="">
+                                    <i class="fa-brands text-white fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands text-white fa-google-plus"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands text-white fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands text-white fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-4">
+                        <div>
+                            <h4 class="text-white">Quick Links</h4>
+                            <br class="d-none d-md-block">
+                            <div class="d-flex flex-column">
+                                <a class="text-white text-decoration-none mb-1" href="#about">About</a>
+                                <a class="text-white text-decoration-none my-1" href="#home">Home</a>
+                                <a class="text-white text-decoration-none my-1" href="#pricing">Pricing</a>
+                                <a class="text-white text-decoration-none my-1" href="#contact">Locatin</a>
+                                <a class="text-white text-decoration-none my-1" href="">Office</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-4">
+                        <h4 class="text-white">Hours</h4>
+                        <br class="d-none d-md-block">
+                        <table class="text-white">
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>: 9:00-18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>: 9:00-18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>: 9:00-18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>: 9:00-18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>: 9:00-18:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-3 mb-5">
+                        <div>
+                            <h4 class="text-white">Contact</h4>
+                            <br class="d-none d-md-block">
+                            <div class="mb-3">
+                                <div class="mb-1">
+                                    <a href="" class="text-white text-decoration-none">
+                                        <i class="fa-solid fa-phone text-white"></i>
+                                        09-422856368
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" class="text-white text-decoration-none">
+                                        <i class="fa-solid fa-envelope text-white"></i>
+                                        info@email.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <a href="" class="text-white text-decoration-none">
+                                        <i class="fa-solid fa-map text-white"></i>
+                                        Pansodan Street, Yangon
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>   
+    
+    <script src="bootstrap-5/js/jquery.min.js"></script>
+    <script src="bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="js/wow_animation.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
